@@ -23,12 +23,19 @@ Este proyecto demuestra cómo pasar de un modelo de Machine Learning entrenado l
 1. **Entrenamos un nuevo modelo** (`LinearRegression`) y lo guardamos con `pickle`.
 2. **Creamos una API con FastAPI** que expone un endpoint `/predict`.
 3. **Contenerizamos la aplicación con Docker** y validamos que funcione localmente.
+   ````
+      docker build -t nombre_de_imagen:latest .
+   ````
+   - Comando básico para levantar un contenendor 
+   ````
+      docker run -p 8000:8000 image_name
+   ````
 4. **Subimos la imagen a Azure Container Registry (ACR)**:
    ```bash
    az acr login --name <registry_name>
    docker tag myimage <registry_name>.azurecr.io/myimage:latest
    docker push <registry_name>.azurecr.io/myimage:latest
-5. Desplegamos el contenedor en Azure Container Instance (ACI):
+6. Desplegamos el contenedor en Azure Container Instance (ACI):
   ````
 az container create \
   --resource-group <rg-name> \
