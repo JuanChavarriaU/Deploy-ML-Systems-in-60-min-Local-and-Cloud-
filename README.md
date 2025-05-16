@@ -26,9 +26,11 @@ Este proyecto demuestra cómo pasar de un modelo de Machine Learning entrenado l
    ````
       docker build -t nombre_de_imagen:latest .
    ````
-   - Comando básico para levantar un contenendor 
+   
+   - Comando básico para crear el contenedor, mapear el puerto 8000 del contenedor al de nuestra pc y -rm para que cuando lo detengamos este se elimine.  
+     
    ````
-      docker run -p 8000:8000 image_name
+      docker run -rm -p 8000:8000 image_name
    ````
 4. **Subimos la imagen a Azure Container Registry (ACR)**:
    ```bash
