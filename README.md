@@ -12,7 +12,7 @@ Este proyecto demuestra cómo pasar de un modelo de Machine Learning entrenado l
 2. Creamos una API con **Flask** y la servimos con `ngrok` directamente desde Colab.
 3. Probamos la API con entradas válidas e inválidas desde otra celda Colab.
 
-📁 Archivo: [`colab_temp_deployment.ipynb`]([colab_temp_deployment.py](https://colab.research.google.com/drive/1uJelL9UpgV8do4MYnROnIGsBWC5qZDVI?usp=sharing))
+📁 Archivo: [colab_temp_deployment.ipynb]([colab_temp_deployment.py](https://colab.research.google.com/drive/1uJelL9UpgV8do4MYnROnIGsBWC5qZDVI?usp=sharing))
 
 ---
 
