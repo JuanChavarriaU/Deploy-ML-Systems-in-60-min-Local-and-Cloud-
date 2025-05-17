@@ -14,6 +14,32 @@ Este proyecto demuestra cómo pasar de un modelo de Machine Learning entrenado l
 
 📁 Archivo: [colab_temp_deployment.ipynb](https://colab.research.google.com/drive/1uJelL9UpgV8do4MYnROnIGsBWC5qZDVI?usp=sharing)
 
+
+# Cómo configurar ngrok en Colab
+1. Ve a [ngrok.com](https://ngrok.com/)
+2. Crea una cuenta.
+3. Una vez tengas la cuenta creada, ve a al menú -> Getting started -> Your authtoken.
+
+![image](https://github.com/user-attachments/assets/20005bb9-4e23-4a4b-a229-6c2d2473ec73)
+
+4. Copia tu llave.
+
+![image](https://github.com/user-attachments/assets/76877a36-639d-46d8-93f4-a357247cbf71)
+
+5. Ve al cuaderno en Google Colab y accede al icono de la llave 🗝️.
+
+![image](https://github.com/user-attachments/assets/0489c8f3-1c0b-4dfa-9b1e-2a6652009f22)
+  
+6. Le das a añadir un nuevo secreto.
+
+![image](https://github.com/user-attachments/assets/b557a6fe-7c9f-4c5e-8da8-994ee6d0ef75)
+
+7. Le das un nombre o identificador a la llave, pega la clave que copiaste de ngrok en el campo de clave y activas el acceso desde cuaderno.
+
+![image](https://github.com/user-attachments/assets/c62c30e6-c4e4-454e-bd60-55a2d4b24316)
+
+8. De esta forma podrás usar correr el notebook sin problemas.
+   
 ---
 
 ### Parte 2: Contenerización y Despliegue Real en la Nube (FastAPI + Docker + Azure)
