@@ -64,19 +64,20 @@ Este proyecto demuestra cómo pasar de un modelo de Machine Learning entrenado l
  ````
   git clone https://github.com/JuanChavarriaU/Deploy-ML-Systems-in-60-min-Local-and-Cloud-.git
   ````
- - Moverse a la carpeta
+- Moverse a la carpeta
    ````
    cd Deploy ML Systems in 60 min Local and Cloud
    ```` 
- - una vez dentro ejecutar el siguiente comando de Docker
+- una vez dentro ejecutar el siguiente comando de Docker
    ````
     docker build -t pred-price-api .
-   ````
+   ````   
 - Luego de ejecutar esto, tendremos nuestra imagen con la api. ahora crearemos nuestro contenedor con esta imagen de base.
   ````
   docker run -rm --name ml-api -p 80:80 pred-price-api
   ````
-  > Este comando va a levantar el contenedor con la imagen que previamente creamos estará disponible en el puerto 80 de nuestro localhost y una vez que detengamos el contenedor este se eliminará
+  > Este comando va a levantar el contenedor con la imagen que previamente creamos. Estará disponible en el puerto 80 de nuestro localhost y una vez que detengamos el contenedor este se eliminará
+  - Comando para detener el contenedor.
   ````
   docker stop ml-api
   ````
