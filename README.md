@@ -46,6 +46,41 @@ Este proyecto demuestra cómo pasar de un modelo de Machine Learning entrenado l
 
 📌 Modelo: regresión lineal para predicción de precios de viviendas.
 
+- Cómo hacer la implementación en local.
+
+> Requerimientos
+> Windows subsystem for linux: En la terminal de powershell ejecuta el siguiente comando.
+
+````
+  wsl --install -d Ubuntu-24.04
+````
+
+> Docker Desktop: [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) | [Mac](https://docs.docker.com/desktop/setup/install/mac-install/) | [Linux](https://docs.docker.com/desktop/setup/install/linux/)
+> [Git](https://git-scm.com/downloads)
+
+#### Una vez con estos requisitos instalados.
+ - Abrir la terminal en su carpeta de proyectos preferida y clonar el repositorio.
+ ````
+  git clone https://github.com/JuanChavarriaU/Deploy-ML-Systems-in-60-min-Local-and-Cloud-.git
+  ````
+ - Moverse a la carpeta
+   ````
+   cd Deploy ML Systems in 60 min Local and Cloud
+   ```` 
+ - una vez dentro ejecutar el siguiente comando de Docker
+   ````
+    docker build -t pred-price-api .
+   ````
+- Luego de ejecutar esto, tendremos nuestra imagen con la api. ahora crearemos nuestro contenedor con esta imagen de base.
+  ````
+  docker run -rm --name ml-api -p 80:80 pred-price-api
+  ````
+  > Este comando va a levantar el contenedor con la imagen que previamente creamos estará disponible en el puerto 80 de nuestro localhost y una vez que detengamos el contenedor este se eliminará
+  ````
+  docker stop ml-api
+  ````
+ #### Una vez aquí podrás acceder a http://localhost:80.
+  
 1. **Entrenamos un nuevo modelo** (`LinearRegression`) y lo guardamos con `pickle`.
 2. **Creamos una API con FastAPI** que expone un endpoint `/predict`.
 3. **Contenerizamos la aplicación con Docker** y validamos que funcione localmente.
