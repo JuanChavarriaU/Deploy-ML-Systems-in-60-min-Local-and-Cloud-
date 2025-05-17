@@ -56,6 +56,7 @@ Este proyecto demuestra cómo pasar de un modelo de Machine Learning entrenado l
 ````
 
 > Docker Desktop: [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) | [Mac](https://docs.docker.com/desktop/setup/install/mac-install/) | [Linux](https://docs.docker.com/desktop/setup/install/linux/)
+
 > [Git](https://git-scm.com/downloads)
 
 #### Una vez con estos requisitos instalados.
